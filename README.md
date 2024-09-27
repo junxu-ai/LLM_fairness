@@ -152,6 +152,9 @@ While significant progress has been made in understanding and addressing fairnes
 | SafeNLP             | [SafeNLP](https://github.com/microsoft/SafeNLP)          | Safety Score for Pre-Trained Language Models.                                                                              |
 | Metric-Fairness     | [Metric-Fairness](https://github.com/txsun1997/Metric-Fairness) | Evaluation of Pre-trained language model-based metrics (PLM-based metrics, e.g., BERTScore, MoverScore, BLEURT).          |
 | Dbias               | [Dbias](https://github.com/dreji18/Fairness-in-AI)       | Detect and mitigate biases in NLP tasks. The model is an end-to-end framework that takes data into raw form, preprocesses it, detects various types of biases, and mitigates them. The output is text free from bias. |
+| Perspective API | [Perspective API by Google Jigsaw](https://www.perspectiveapi.com) | A tool created by Google Jigsaw that detects toxicity in text. It generates a probability of toxicity for a given text input and is widely used in research on mitigating toxic content in AI. |
+| Aequitas        | [Aequitas Bias Audit Toolkit](https://dsapp.uchicago.edu/projects/aequitas) | An open-source toolkit designed to audit fairness and detect bias in machine learning models. Aequitas helps data scientists and policymakers understand and mitigate bias, including in large language models (LLMs). |
+
 
 
 ## General tools
@@ -194,7 +197,8 @@ Such datasets often include a variety of text samples where the model's task is 
 
 These datasets are designed to evaluate the text generation capabilities of language models. They provide prompts or initial text inputs, and the model is tasked with generating extended text based on these inputs.
 The focus is on the quality, coherence, and creativity of the generated text, as well as its adherence to any specified constraints or guidelines. These datasets help in assessing how well a model can produce human-like text and its potential biases in generation.
-![image](https://github.com/user-attachments/assets/bbb8c35c-7ac0-4dec-9216-ff73c7232161) Figure from "Fairness in Large Language Models: A Taxonomic Survey"
+![image](https://github.com/user-attachments/assets/bbb8c35c-7ac0-4dec-9216-ff73c7232161) 
+Figure from "Fairness in Large Language Models: A Taxonomic Survey"
 
 Readers can find more information from https://github.com/i-gallegos/Fair-LLM-Benchmark
 
