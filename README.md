@@ -194,7 +194,7 @@ Such datasets often include a variety of text samples where the model's task is 
 
 These datasets are designed to evaluate the text generation capabilities of language models. They provide prompts or initial text inputs, and the model is tasked with generating extended text based on these inputs.
 The focus is on the quality, coherence, and creativity of the generated text, as well as its adherence to any specified constraints or guidelines. These datasets help in assessing how well a model can produce human-like text and its potential biases in generation.
-![image](https://github.com/user-attachments/assets/bbb8c35c-7ac0-4dec-9216-ff73c7232161)
+![image](https://github.com/user-attachments/assets/bbb8c35c-7ac0-4dec-9216-ff73c7232161) Figure from "Fairness in Large Language Models: A Taxonomic Survey"
 
 Readers can find more information from https://github.com/i-gallegos/Fair-LLM-Benchmark
 
