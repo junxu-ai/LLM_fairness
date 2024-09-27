@@ -30,8 +30,17 @@ While significant progress has been made in understanding and addressing fairnes
 # Papers
 
 ## Survey papers
-
+- Zuqiang Chu, Zichong Wang, Wenbin Zhang, Fairness in Large Language Models: A Taxonomic Survey, 2024, SIGKDD Explorations, 26(1), 34-48. 10.1145/3682112.3682117
+- Isabel O. Gallegos, Ryan A. Rossi, Joe Barrow, Md. Mehrab Tanjim, Sungchul Kim, Franck Dernoncourt, Ruiyi Zhang, Nesreen K. Ahmed, Bias and Fairness in Large Language Models: A Survey, 2024, arXiv, Preprint. Link
+- Zhou Ren, Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era, 2023, arXiv, Preprint. Link
+- Zishan Guo, Renren Jin, Chuang Liu, Yufei Huang, Dan Shi, Supryadi, Linhao Yu, Yan Liu, Jiaxuan Li, Bojian Xiong, Deyi Xiong, Large Language Models are not Fair Evaluators, 2024, arXiv, Preprint. Link
 - A.G. Elrod, Uncovering Theological and Ethical Biases in LLMs, 2024, 10.7146/hn.v9i1.143407
+- Yang Liu, Yuanshun Yao, Jean-Francois Ton, Xiaoying Zhang, Rui Guo, Hao Cheng, Yegor Klochkov, Muhammad Faaiz Taufiq, Hanguang Li, Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment, 2023, 10.48550/arxiv.2308.05374
+- Ying Sheng, Shiyi Cao, Dacheng Li, Banghua Zhu, Zhuohan Li, Danyang Zhuo, Joseph E. Gonzalez, Ionut Stoica, Fairness in Serving Large Language Models, 2023, 10.48550/arxiv.2401.00588
+- Isabel O. Gallegos, Ryan A. Rossi, Joe Barrow, Md. Mehrab Tanjim, Sungchul Kim, Franck Dernoncourt, Ruiyi Zhang, Nesreen K. Ahmed, Bias and Fairness in Large Language Models: A Survey, 2023, 10.48550/arxiv.2309.00770
+- Thang Viet Doan, Zhibo Chu, Zichong Wang, Wenbin Zhang, Fairness Definitions in Language Models Explained, 2024, 10.48550/arxiv.2407.18454
+- Shivani Kapania, Ruiyi Wang, Toby Jia-Jun Li, Tianshi Li, Hong Shen, "I'm categorizing LLM as a productivity tool": Examining ethics of LLM use in HCI research practices, 2024, 10.48550/arxiv.2403.19876
+- Yingji Li, Mengnan Du, Rui Song, Xin Wang, Ying Wang, A Survey on Fairness in Large Language Models, 2024, arXiv, Preprint. Link
 
 ## General papers
 - Abdelrahman Zayed, Gonçalo Mordido, Samira Shabanian, Ioana Baldini, Sarath Chandar, Fairness-Aware Structured Pruning in Transformers, 2024, 10.1609/aaai.v38i20.30256
@@ -66,45 +75,53 @@ While significant progress has been made in understanding and addressing fairnes
 - Jingling Li, Zeyu Tang, Xiaoyu Liu, Peter Spirtes, Kun Zhang, Liu Leqi, Yang Liu, Steering LLMs Towards Unbiased Responses: A Causality-Guided Debiasing Framework, 2024, 10.48550/arxiv.2403.08743
 - Jessica Maria Echterhoff, Yao Liu, Abeer Alessa, Julian McAuley, Zexue He, Cognitive Bias in High-Stakes Decision-Making with LLMs, 2024, 10.48550/arxiv.2403.00811
 - Jie Wang, LLM-Oracle Machines, 2024, 10.48550/arxiv.2406.12213
-- Jin A. Shin, Henry Song, H.J. Lee, Soyeong Jeong, Jong C. Park, Ask LLMs Directly, "What shapes your bias?": Measuring Social Bias in Large Language Models, 2024, 10.48550/arxiv.2406.04064
+- Jin A. Shin, Henry Song, H.J. Lee, Soyeong Jeong, Jong C. Park, Ask LLMs Directly, "What shapes your bias?": Measuring Social Bias in Large Language Models, 2024, 10.48550/arxiv.2406.![image](https://github.com/user-attachments/assets/ff6158f6-73b3-4e5f-85cb-7f6077732809)
+04064
 - Jingling Li, Steering LLMs Towards Unbiased Responses: A Causality-Guided Debiasing Framework, 2024, 10.48550/arxiv.2403.08743
 - Jingtong Gao, Chen Bin, Xiangyu Zhao, Weiwen Liu, Xiangyang Li, Yichao Wang, Zijian Zhang, Wanyu Wang, Yuyang Ye, Shawn D. Lin, Huifeng Guo, Ruiming Tang, LLM-enhanced Reranking in Recommender Systems, 2024, 10.48550/arxiv.2406.12433
-- Roman Koshkin, K. Sudoh, Satoshi Nakamura, TransLLaMa: LLM-based Simultaneous Translation System, 2024, 10.48550/arxiv.2402.04636
-Rongsheng Wang, Hao Chen, Ruizhe Zhou, Han Ma, Yaofei Duan, Yanlan Kang, Songhua Yang, Baoyu Fan, Tao Tan, LLM-Detector: Improving AI-Generated Chinese Text Detection with Open-Source LLM Instruction Tuning, 2024, 10.48550/arxiv.2402.01158
-Satya Vart Dwivedi, Sanjukta Ghosh, Shivam Dwivedi, Breaking the Bias: Gender Fairness in LLMs Using Prompt Engineering and In-Context Learning, 2023, 10.21659/rupkatha.v15n4.10
-Shaina Raza, Shardul Ghuge, Chen Ding, Elham Dolatabadi, Deval Pandya, FAIR Enough: Develop and Assess a FAIR-Compliant Dataset for Large Language Model Training?, 2024, 10.1162/dint_a_00255
-Shashank Gupta, Vaishnavi Shrivastava, Ameet Shridhar Deshpande, Ashwin Kalyan, Peter Clark, Ashish Sabharwal, Tushar Khot, Bias Runs Deep: Implicit Reasoning Biases in Persona-Assigned LLMs, 2023, 10.48550/arxiv.2311.04892
-Shivani Kapania, Ruiyi Wang, Toby Jia-Jun Li, Tianshi Li, Hong Shen, "I'm categorizing LLM as a productivity tool": Examining ethics of LLM use in HCI research practices, 2024, 10.48550/arxiv.2403.19876
-Shubh Goyal, Medha Hira, Shubham Mishra, Sukriti Goyal, Arnav Goel, Niharika Dadu, DB Kirushikesh, Sameep Mehta, Nishtha Madaan, LLMGuard: Guarding against Unsafe LLM Behavior, 2024, 10.1609/aaai.v38i21.30566
-Shubh Goyal, Medha Hira, Shubham Mishra, Sumit Goyal, Ashiya Goel, Niharika Dadu, Kirushikesh DB, Sameep Mehta, Nishtha Madaan, LLMGuard: Guarding Against Unsafe LLM Behavior, 2024, 10.48550/arxiv.2403.00826
-Song Wang, Peng Wang, Tong Zhou, Yiqi Dong, Zhen Tan, Jundong Li, CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models, 2024, 10.48550/arxiv.2407.02408
-Steven J. DeRose, Can LLMs help with XML?, 2024, 10.4242/balisagevol29.derose01
-Subhabrata Majumdar, Standards for LLM Security, 2024, 10.1007/978-3-031-54827-7_25
-Sumuk Shashidhar, Abhinav Chinta, Vaibhav Sahai, Zhenhailong Wang, Heng Ji, Democratizing LLMs: An Exploration of Cost-Performance Trade-offs in Self-Refined Open-Source Models, 2023, 10.48550/arxiv.2310.07611
-Swanand Kadhe, Anisa Halimi, Ambrish Rawat, Nathalie Baracaldo, FairSISA: Ensemble Post-Processing to Improve Fairness of Unlearning in LLMs, 2023, 10.48550/arxiv.2312.07420
-Thang Viet Doan, Zhibo Chu, Zichong Wang, Wenbin Zhang, Fairness Definitions in Language Models Explained, 2024, 10.48550/arxiv.2407.18454
-Virginia K. Felkner, John A. Thompson, Jonathan May, GPT is Not an Annotator: The Necessity of Human Annotation in Fairness Benchmark Construction, 2024, 10.48550/arxiv.2405.15760
-Vyas Raina, Adian Liusie, Mark Gales, Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment, 2024, 10.48550/arxiv.2402.14016
-Xinghua Zhang, Bowen Yu, Haiyang Yu, Yangyu Lv, Tingwen Liu, Fei Huang, Hongbo Xu, Yongbin Li, Wider and Deeper LLM Networks are Fairer LLM Evaluators, 2023, 10.48550/arxiv.2308.01862
-Xinru Wang, Sajjadur Rahman, Kushan Mitra, Zhengjie Miao, Human-LLM Collaborative Annotation Through Effective Verification of LLM Labels, 2024, 10.1145/3613904.3641960
 
-Keito Inoshita, Assessment of Conflict Structure Recognition and Bias Impact in Japanese LLMs, 2024, 10.1109/times-icon61890.2024.10630720
-Kun Zhou, Yutao Zhu, Zhipeng Chen, Wentong Chen, Wayne Xin Zhao, Xu Chen, Yankai Lin, Jinhui Wen, Jiawei Han, Don't Make Your LLM an Evaluation Benchmark Cheater, 2023, 10.48550/arxiv.2311.01964
-Kuniaki Saito, Kihyuk Sohn, Chen-Yu Lee, Yoshitaka Ushiku, Unsupervised LLM Adaptation for Question Answering, 2024, 10.48550/arxiv.2402.12170
-Lauren Rhue, Sofie Goethals, Arun Sundararajan, Evaluating LLMs for Gender Disparities in Notable Persons, 2024, 10.48550/arxiv.2403.09148
-Lieh-Chiu Lin, H. Alex Brown, Kenji Kawaguchi, Michael Shieh, Single Character Perturbations Break LLM Alignment, 2024, 10.48550/arxiv.2407.03232
-Loïc Maréchal, Daniel Celeny, Insurance Outlook for LLM-Induced Risk, 2024, 10.1007/978-3-031-54827-7_15
-Luc Patiny, Guillaume Godin, Automatic extraction of FAIR data from publications using LLM, 2023, 10.26434/chemrxiv-2023-05v1b
-Lucas Potter, Xavier–Lewis Palmer, Post-LLM Academic Writing Considerations, 2023, 10.1007/978-3-031-47448-4_12
-Luyang Lin, Lingzhi Wang, Jinsong Guo, Kam-Fai Wong, Investigating Bias in LLM-Based Bias Detection: Disparities between LLMs and Human Perception, 2024, 10.48550/arxiv.2403.14896
-M. Kamruzzaman, M. M. I. Shovon, Gene Louis Kim, Investigating Subtler Biases in LLMs: Ageism, Beauty, Institutional, and Nationality Bias in Generative Models, 2023, 10.48550/arxiv.2309.08902
-Marjan Fariborz, Mahyar Samani, Pouya Fotouhi, Roberto Proietti, Il-Min Yi, Venkatesh Akella, Jason Lowe-Power, Samuel Palermo, S. J. B. Yoo, LLM: Realizing Low-Latency Memory by Exploiting Embedded Silicon Photonics for Irregular Workloads, 2022, 10.1007/978-3-031-07312-0_3
-Mark Pock, Andre Ye, Jared Moore, LLMs grasp morality in concept, 2023, 10.48550/arxiv.2311.02294
-Mohsen Fayyaz, Fan Yin, Jiao Sun, Nanyun Peng, Evaluating Human Alignment and Model Faithfulness of LLM Rationale, 2024, 10.48550/arxiv.2407.00219
-Nat McAleese, Rai Michael Pokorny, Juan Felipe Ceron Uribe, Evgenia Nitishinskaya, Maja Trębacz, Jan Leike, LLM Critics Help Catch LLM Bugs, 2024, 10.48550/arxiv.2407.00215
-Praise Chinedu-Eneh, Trung T. Nguyen, Elephant: LLM System for Accurate Recantations, 2024, 10.1109/ccwc60891.2024.10427759
-Qizhang Feng, Siva Rajesh Kasa, Hyokun Yun, Choon Hui Teo, Sravan Bodapati, Exposing Privacy Gaps: Membership Inference Attack on Preference Data for LLM Alignment, 2024, 10.48550/arxiv.2407.06443
-Raphael Poulain, Hamed Fayyaz, Rahmatollah Beheshti, Bias patterns in the application of LLMs for clinical decision support: A comprehensive study, 2024, 10.48550/arxiv.2404.15149
-Rifki Afina Putri, Faiz Ghifari Haznitrama, Dea Adhista, Alice Oh, Can LLM Generate Culturally Relevant Commonsense QA Data? Case Study in Indonesian and Sundanese, 2024, 10.48550/arxiv.2402.17302
-Rohan Alexander, Lindsay Katz, Caitlin Moore, Zvi Schwartz, Evaluating the Decency and Consistency of Data Validation Tests Generated by LLMs, 2023, 10.48550/arxiv.2310.01402
+- Keito Inoshita, Assessment of Conflict Structure Recognition and Bias Impact in Japanese LLMs, 2024, 10.1109/times-icon61890.2024.10630720
+- Kun Zhou, Yutao Zhu, Zhipeng Chen, Wentong Chen, Wayne Xin Zhao, Xu Chen, Yankai Lin, Jinhui Wen, Jiawei Han, Don't Make Your LLM an Evaluation Benchmark Cheater, 2023, 10.48550/arxiv.2311.01964
+- Kuniaki Saito, Kihyuk Sohn, Chen-Yu Lee, Yoshitaka Ushiku, Unsupervised LLM Adaptation for Question Answering, 2024, 10.48550/arxiv.2402.12170
+- Lauren Rhue, Sofie Goethals, Arun Sundararajan, Evaluating LLMs for Gender Disparities in Notable Persons, 2024, 10.48550/arxiv.2403.09148
+- Lieh-Chiu Lin, H. Alex Brown, Kenji Kawaguchi, Michael Shieh, Single Character Perturbations Break LLM Alignment, 2024, 10.48550/arxiv.2407.03232
+- Loïc Maréchal, Daniel Celeny, Insurance Outlook for LLM-Induced Risk, 2024, 10.1007/978-3-031-54827-7_15
+- Luc Patiny, Guillaume Godin, Automatic extraction of FAIR data from publications using LLM, 2023, 10.26434/chemrxiv-2023-05v1b
+- Lucas Potter, Xavier–Lewis Palmer, Post-LLM Academic Writing Considerations, 2023, 10.1007/978-3-031-47448-4_12
+- Luyang Lin, Lingzhi Wang, Jinsong Guo, Kam-Fai Wong, Investigating Bias in LLM-Based Bias Detection: Disparities between LLMs and Human Perception, 2024, 10.48550/arxiv.2403.14896
+- M. Kamruzzaman, M. M. I. Shovon, Gene Louis Kim, Investigating Subtler Biases in LLMs: Ageism, Beauty, Institutional, and Nationality Bias in Generative Models, 2023, 10.48550/arxiv.2309.08902
+- Marjan Fariborz, Mahyar Samani, Pouya Fotouhi, Roberto Proietti, Il-Min Yi, Venkatesh Akella, Jason Lowe-Power, Samuel Palermo, S. J. B. Yoo, LLM: Realizing Low-Latency Memory by Exploiting Embedded Silicon Photonics for Irregular Workloads, 2022, 10.1007/978-3-031-07312-0_3
+- Mark Pock, Andre Ye, Jared Moore, LLMs grasp morality in concept, 2023, 10.48550/arxiv.2311.02294
+- Mohsen Fayyaz, Fan Yin, Jiao Sun, Nanyun Peng, Evaluating Human Alignment and Model Faithfulness of LLM Rationale, 2024, 10.48550/arxiv.2407.00219
+- Nat McAleese, Rai Michael Pokorny, Juan Felipe Ceron Uribe, Evgenia Nitishinskaya, Maja Trębacz, Jan Leike, LLM Critics Help Catch LLM Bugs, 2024, 10.48550/arxiv.2407.00215
+- Praise Chinedu-Eneh, Trung T. Nguyen, Elephant: LLM System for Accurate Recantations, 2024, 10.1109/ccwc60891.2024.10427759
+- Qizhang Feng, Siva Rajesh Kasa, Hyokun Yun, Choon Hui Teo, Sravan Bodapati, Exposing Privacy Gaps: Membership Inference Attack on Preference Data for LLM Alignment, 2024, 10.48550/arxiv.2407.06443
+- Raphael Poulain, Hamed Fayyaz, Rahmatollah Beheshti, Bias patterns in the application of LLMs for clinical decision support: A comprehensive study, 2024, 10.48550/arxiv.2404.15149
+- Rifki Afina Putri, Faiz Ghifari Haznitrama, Dea Adhista, Alice Oh, Can LLM Generate Culturally Relevant Commonsense QA Data? Case Study in Indonesian and Sundanese, 2024, 10.48550/arxiv.2402.17302
+- Rohan Alexander, Lindsay Katz, Caitlin Moore, Zvi Schwartz, Evaluating the Decency and Consistency of Data Validation Tests Generated by LLMs, 2023, 10.48550/arxiv.2310.01402
+- Roman Koshkin, K. Sudoh, Satoshi Nakamura, TransLLaMa: LLM-based Simultaneous Translation System, 2024, 10.48550/arxiv.2402.04636
+- Rongsheng Wang, Hao Chen, Ruizhe Zhou, Han Ma, Yaofei Duan, Yanlan Kang, Songhua Yang, Baoyu Fan, Tao Tan, LLM-Detector: Improving AI-Generated Chinese Text Detection with Open-Source LLM Instruction Tuning, 2024, 10.48550/arxiv.2402.01158
+- Satya Vart Dwivedi, Sanjukta Ghosh, Shivam Dwivedi, Breaking the Bias: Gender Fairness in LLMs Using Prompt Engineering and In-Context Learning, 2023, 10.21659/rupkatha.v15n4.10
+- Shaina Raza, Shardul Ghuge, Chen Ding, Elham Dolatabadi, Deval Pandya, FAIR Enough: Develop and Assess a FAIR-Compliant Dataset for Large Language Model Training?, 2024, 10.1162/dint_a_00255
+- Shashank Gupta, Vaishnavi Shrivastava, Ameet Shridhar Deshpande, Ashwin Kalyan, Peter Clark, Ashish Sabharwal, Tushar Khot, Bias Runs Deep: Implicit Reasoning Biases in Persona-Assigned LLMs, 2023, 10.48550/arxiv.2311.04892
+- Shubh Goyal, Medha Hira, Shubham Mishra, Sukriti Goyal, Arnav Goel, Niharika Dadu, DB Kirushikesh, Sameep Mehta, Nishtha Madaan, LLMGuard: Guarding against Unsafe LLM Behavior, 2024, 10.1609/aaai.v38i21.30566
+- Song Wang, Peng Wang, Tong Zhou, Yiqi Dong, Zhen Tan, Jundong Li, CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models, 2024, 10.48550/arxiv.2407.02408
+- Steven J. DeRose, Can LLMs help with XML?, 2024, 10.4242/balisagevol29.derose01
+- Subhabrata Majumdar, Standards for LLM Security, 2024, 10.1007/978-3-031-54827-7_25
+- Sumuk Shashidhar, Abhinav Chinta, Vaibhav Sahai, Zhenhailong Wang, Heng Ji, Democratizing LLMs: An Exploration of Cost-Performance Trade-offs in Self-Refined Open-Source Models, 2023, 10.48550/arxiv.2310.07611
+- Swanand Kadhe, Anisa Halimi, Ambrish Rawat, Nathalie Baracaldo, FairSISA: Ensemble Post-Processing to Improve Fairness of Unlearning in LLMs, 2023, 10.48550/arxiv.2312.07420
+- Virginia K. Felkner, John A. Thompson, Jonathan May, GPT is Not an Annotator: The Necessity of Human Annotation in Fairness Benchmark Construction, 2024, 10.48550/arxiv.2405.15760
+- Vyas Raina, Adian Liusie, Mark Gales, Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment, 2024, 10.48550/arxiv.2402.14016
+- Xinghua Zhang, Bowen Yu, Haiyang Yu, Yangyu Lv, Tingwen Liu, Fei Huang, Hongbo Xu, Yongbin Li, Wider and Deeper LLM Networks are Fairer LLM Evaluators, 2023, 10.48550/arxiv.2308.01862
+- Xinru Wang, Sajjadur Rahman, Kushan Mitra, Zhengjie Miao, Human-LLM Collaborative Annotation Through Effective Verification of LLM Labels, 2024, 10.1145/3613904.3641960
+- Yashar Deldjoo, Tommaso di Noia, CFaiRLLM: Consumer Fairness Evaluation in Large-Language Model Recommender System, 2024, arXiv, Preprint. Link
+- Yashar Deldjoo, Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency, 2024, arXiv, Preprint. Link
+- Yifan Zeng, Ojas Tendolkar, Raymond Baartmans, Qingyun Wu, Huazheng Wang, Lizhong Chen, LLM-RankFusion: Mitigating Intrinsic Inconsistency in LLM-based Ranking, 2024, 10.48550/arxiv.2406.00231
+- Yijiang River Dong, Tiancheng Hu, Nigel Collier, Can LLM be a Personalized Judge?, 2024, 10.48550/arxiv.2406.11657
+- Yixin Wan, George Pu, Jiao Sun, Aparna Garimella, Kai-Wei Chang, Nanyun Peng, "Kelly is a Warm Person, Joseph is a Role Model": Gender Biases in LLM-Generated Reference Letters, 2023, 10.48550/arxiv.2310.09219
+- Yuan Wang, Xuyang Wu, Hsin-Tai Wu, Zhiqiang Tao, Yi Fang, Do Large Language Models Rank Fairly? An Empirical Study on the Fairness of LLMs as Rankers, 2024, 10.48550/arxiv.2404.03192
+- Yunqi Li, Yongfeng Zhang, Fairness of ChatGPT, 2023, 10.48550/arXiv.2305.18569
+- Zelong Li, Wen Hua, Hao Wang, He Zhu, Yongfeng Zhang, Formal-LLM: Integrating Formal Language and Natural Language for Controllable LLM-based Agents, 2024, 10.48550/arxiv.2402.00798
+- Zhengyu Hu, Linxin Song, Jieyu Zhang, Zheyuan Xiao, Jingang Wang, Frank Jm Geurts, Jieyu Zhao, Jingbo Zhou, Rethinking LLM-based Preference Evaluation, 2024, 10.48550/arxiv.2407.01085
+
 
