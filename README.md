@@ -95,23 +95,36 @@ These metrics evaluate bias based on the probabilities or likelihoods assigned b
 \text{LPBS}(S) = \log\left(\frac{P_{\text{target}_i}}{P_{\text{prior}_i}}\right) - \log\left(\frac{P_{\text{target}_j}}{P_{\text{prior}_j}}\right)
 ```
 
-3. **CrowS-Pairs Score [124]:** The CrowS-Pairs Score utilizes pseudo-log-likelihood (PLL) to detect bias by analyzing pairs of sentences—one stereotypical and one neutral or counter-stereotypical. PLL approximates the probability of each token conditioned on the rest of the sentence, allowing for an overall sentence probability estimation. By comparing the PLL scores of these sentence pairs, the metric assesses the model's inclination toward stereotypes.
+3. **CrowS-Pairs Score:** The CrowS-Pairs Score utilizes pseudo-log-likelihood (PLL) to detect bias by analyzing pairs of sentences—one stereotypical and one neutral or counter-stereotypical. PLL approximates the probability of each token conditioned on the rest of the sentence, allowing for an overall sentence probability estimation. By comparing the PLL scores of these sentence pairs, the metric assesses the model's inclination toward stereotypes.
+
+4. **Context Association Test (CAT):** CAT evaluates bias by comparing the probabilities assigned to a stereotype, an anti-stereotype, and a meaningless option for each sentence, focusing on \( P(M \mid U; \theta) \), where \( M \) is the meaningful option and \( U \) is the context. Unlike pseudo-log-likelihood methods that consider \( P(U \mid M; \theta) \), CAT assesses the likelihood of the model choosing the meaningful completion given the context. The bias score is calculated by averaging the log probabilities of the meaningful options across all instances.
 
 
-4. **Exposure Bias**
-   - Evaluates the probability that the model will generate biased or harmful content when conditioned on specific inputs.
+5. **Idealized CAT (iCAT) Score:** The iCAT score refines CAT by defining an ideal language model with a language modeling score (lms) of 100 (always choosing meaningful options) and a stereotype score (ss) of 50 (choosing stereotypes and anti-stereotypes equally). It is calculated using the formula:
 
-5. **Bias Amplification Metric**
-   - Quantifies how much a model amplifies existing biases present in the training data during prediction.
+$$
+\text{iCAT}(S) = \text{lms} \times \frac{\min(\text{ss}, 100 - \text{ss})}{50}
+$$
 
-6. **Likelihood of Stereotypical Associations**
-   - Computes the probability that the model predicts stereotypical associations over neutral or unbiased ones.
+This metric balances the model's language proficiency with its bias level, rewarding models that are both accurate and unbiased.
 
-7. **KL-Divergence Between Group Distributions**
-   - Measures divergence in the output probability distributions across different demographic groups.
 
-8. **Calibration Error Across Groups**
-   - Assesses whether predicted probabilities are well-calibrated for different demographic groups, indicating fairness in uncertainty estimation.
+6. **All Unmasked Likelihood (AUL):** AUL extends metrics like CrowS-Pairs Score and CAT by evaluating the likelihood of the entire unmasked sentence, predicting all tokens without masking. This method provides the model with full context, improving prediction accuracy and reducing selection bias from masked tokens. The AUL score is the average log probability of all tokens in the sentence:
+
+$$
+\text{AUL}(S) = \frac{1}{|S|} \sum_{s \in S} \log P(s \mid S; \theta)
+$$
+
+7. **AUL with Attention Weights (AULA):** AULA enhances AUL by incorporating attention weights to account for the varying importance of tokens. Each token's log probability is weighted by its associated attention weight \( \alpha_i \), reflecting its significance in the sentence:
+
+$$
+\text{AULA}(S) = \frac{1}{|S|} \sum_{s \in S} \alpha_i \log P(s \mid S; \theta)
+$$
+
+This weighted approach provides a more nuanced bias assessment by emphasizing more influential tokens.
+
+8. **Language Model Bias (LMB):** LMB measures bias by comparing the mean perplexity between biased statements and their counterfactuals involving alternative social groups. After removing outlier pairs with extreme perplexity values, it computes the t-value from a two-tailed Student's t-test between the perplexities of the biased and counterfactual statements. A significant t-value indicates the presence of bias in the language model's predictions.
+
 
 9. **Entropy Difference**
    - Compares the uncertainty (entropy) in model predictions across groups; significant differences may signal bias.
@@ -126,7 +139,20 @@ These metrics evaluate bias based on the probabilities or likelihoods assigned b
 
 13. **Negative Log-Likelihood (NLL) Disparity**
    - Assesses if the model assigns higher NLL to inputs related to certain groups, indicating potential bias.
+14. **Exposure Bias**
+   - Evaluates the probability that the model will generate biased or harmful content when conditioned on specific inputs.
 
+15. **Bias Amplification Metric**
+   - Quantifies how much a model amplifies existing biases present in the training data during prediction.
+
+16. **Likelihood of Stereotypical Associations**
+   - Computes the probability that the model predicts stereotypical associations over neutral or unbiased ones.
+
+17. **KL-Divergence Between Group Distributions**
+   - Measures divergence in the output probability distributions across different demographic groups.
+
+18. **Calibration Error Across Groups**
+   - Assesses whether predicted probabilities are well-calibrated for different demographic groups, indicating fairness in uncertainty estimation.
 
 ### **Generation-Based Fairness Metrics**
 
@@ -187,8 +213,6 @@ These metrics analyze the content generated by LLMs to detect and quantify bias 
 These metrics help identify and quantify biases related to gender, race, religion, age, and other sensitive attributes in LLMs. Employing a combination of these metrics provides a comprehensive understanding of a model's fairness and guides efforts to mitigate biases.
 
 
-
-
 # Tools
 ## LLM tools
 
@@ -203,7 +227,6 @@ These metrics help identify and quantify biases related to gender, race, religio
 | Dbias               | [Dbias](https://github.com/dreji18/Fairness-in-AI)       | Detect and mitigate biases in NLP tasks. The model is an end-to-end framework that takes data into raw form, preprocesses it, detects various types of biases, and mitigates them. The output is text free from bias. |
 | Perspective API | [Perspective API by Google Jigsaw](https://www.perspectiveapi.com) | A tool created by Google Jigsaw that detects toxicity in text. It generates a probability of toxicity for a given text input and is widely used in research on mitigating toxic content in AI. |
 | Aequitas        | [Aequitas Bias Audit Toolkit](https://dsapp.uchicago.edu/projects/aequitas) | An open-source toolkit designed to audit fairness and detect bias in machine learning models. Aequitas helps data scientists and policymakers understand and mitigate bias, including in large language models (LLMs). |
-
 
 
 ## General tools
