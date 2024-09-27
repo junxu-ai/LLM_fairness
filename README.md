@@ -1,5 +1,22 @@
 # Fairness in LLM
-Collection of papers, tools, datasets for fairness of LLM
+This repository contains a collection of papers, tools, datasets for fairness of LLM.
+
+- [Fairness in LLM](#fairness-in-llm)
+- [Introduction](#introduction)
+  - [Sources of Bias in LLMs](#sources-of-bias-in-llms)
+  - [Assessing Fairness in LLMs](#assessing-fairness-in-llms)
+  - [Mitigation Strategies](#mitigation-strategies)
+  - [Challenges and Future Directions](#challenges-and-future-directions)
+- [Papers](#papers)
+  - [Survey papers](#survey-papers)
+  - [General papers](#general-papers)
+- [Tools](#tools)
+  - [LLM tools](#llm-tools)
+  - [General tools](#general-tools)
+  - [Explanation tools](#explanation-tools)
+- [Datasets](#datasets)
+- [Other Useful Links](#other-useful-links)
+
 
 # Introduction
 Fairness in Large Language Models (LLMs) is a critical area of research, as these models are increasingly used in applications that impact diverse populations. The challenge lies in ensuring that LLMs do not perpetuate or exacerbate biases, particularly against marginalized groups. This involves understanding the sources of bias, developing metrics for assessing fairness, and implementing strategies to mitigate unfair outcomes. The following sections explore these aspects in detail, drawing insights from recent research.
