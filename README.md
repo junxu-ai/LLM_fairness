@@ -42,6 +42,153 @@ Fairness in Large Language Models (LLMs) is a critical area of research, as thes
 
 While significant progress has been made in understanding and addressing fairness in LLMs, challenges remain. The complexity of human-AI interactions and the diverse contexts in which LLMs are deployed require ongoing research and innovation. Moreover, achieving fairness is not just a technical challenge but also a social one, necessitating collaboration among developers, users, and stakeholders to create AI systems that are equitable and just.
 
+# Metrics
+A comprehensive list of **fairness metrics** for LLMs, organized into three main groups: **embeddings-based metrics**, **probability-based metrics**, and **generation-based metrics**.
+
+---
+
+### **Embeddings-Based Fairness Metrics**
+
+These metrics assess bias present in word or sentence embeddings produced by LLMs.
+
+1. **Word Embedding Association Test (WEAT)**
+   - Measures biases by comparing similarities between target concepts (e.g., male vs. female names) and attribute words (e.g., career vs. family).
+
+2. **Sentence Encoder Association Test (SEAT)**
+   - An extension of WEAT for sentence embeddings from models like BERT or GPT.
+
+3. **Embedding Coherence Test**
+   - Evaluates how closely embeddings of words related to specific demographics cluster together, indicating potential bias.
+
+4. **Direct Bias Measurement**
+   - Computes cosine similarity between embeddings of demographic identifiers (e.g., "man," "woman") and attribute words to quantify bias.
+
+5. **Bias Subspace Projection**
+   - Projects embeddings onto identified bias subspaces to measure the extent of bias along specific dimensions.
+
+6. **Relative Norm Difference**
+   - Assesses bias by measuring differences in the norms of embeddings associated with different demographic groups.
+
+7. **Hardness Bias**
+   - Measures how easily a classifier can distinguish between demographic groups based on embeddings; higher accuracy indicates more bias.
+
+8. **Mahalanobis Distance Bias**
+   - Uses Mahalanobis distance to detect biases in the distribution of embeddings across groups.
+
+9. **Centering Alignment**
+   - Compares the mean embeddings of different groups to assess disparities.
+
+10. **Local Neighborhood Bias**
+    - Analyzes the immediate neighbors of embeddings in the vector space for demographic clustering.
+
+---
+
+### **Probability-Based Fairness Metrics**
+
+These metrics evaluate bias based on the probabilities or likelihoods assigned by LLMs to different sequences or tokens.
+
+1. **Discovery of Correlations (DisCo):** DisCo assesses bias by using template sentences with two slots, such as “[PERSON] often likes to [BLANK]”. The [PERSON] slot is filled with gender-related terms, while the [BLANK] slot is completed by the model's top predictions. By analyzing how the model's predictions vary based on the gender term used, DisCo evaluates the presence and magnitude of bias in the model.
+
+---
+
+2. **Log Probability Bias Score (LPBS) :** LPBS also employs template sentences but corrects for inconsistent prior probabilities of target attributes. It computes the normalized probabilities of sentences like “he is a doctor” versus “she is a doctor” by adjusting for the baseline probabilities (e.g., “he is a [MASK]”). Bias is quantified by comparing these normalized probability scores between different demographic groups using the formula:
+
+\[
+\text{LPBS}(S) = \log\left(\frac{P_{\text{target}_i}}{P_{\text{prior}_i}}\right) - \log\left(\frac{P_{\text{target}_j}}{P_{\text{prior}_j}}\right)
+\]
+
+3. **CrowS-Pairs Score [124]:** The CrowS-Pairs Score utilizes pseudo-log-likelihood (PLL) to detect bias by analyzing pairs of sentences—one stereotypical and one neutral or counter-stereotypical. PLL approximates the probability of each token conditioned on the rest of the sentence, allowing for an overall sentence probability estimation. By comparing the PLL scores of these sentence pairs, the metric assesses the model's inclination toward stereotypes.
+
+
+4. **Exposure Bias**
+   - Evaluates the probability that the model will generate biased or harmful content when conditioned on specific inputs.
+
+5. **Bias Amplification Metric**
+   - Quantifies how much a model amplifies existing biases present in the training data during prediction.
+
+6. **Likelihood of Stereotypical Associations**
+   - Computes the probability that the model predicts stereotypical associations over neutral or unbiased ones.
+
+7. **KL-Divergence Between Group Distributions**
+   - Measures divergence in the output probability distributions across different demographic groups.
+
+8. **Calibration Error Across Groups**
+   - Assesses whether predicted probabilities are well-calibrated for different demographic groups, indicating fairness in uncertainty estimation.
+
+9. **Entropy Difference**
+   - Compares the uncertainty (entropy) in model predictions across groups; significant differences may signal bias.
+
+10. **Mutual Information Bias**
+    - Measures the mutual information between model outputs and sensitive attributes to detect dependency.
+11. **Perplexity Disparity**
+   - Compares perplexity scores for texts pertaining to different demographic groups; higher perplexity may indicate bias or unfamiliarity.
+
+12. **Conditional Likelihood Difference**
+   - Measures differences in the likelihood assigned to sequences conditioned on demographic attributes.
+
+13. **Negative Log-Likelihood (NLL) Disparity**
+   - Assesses if the model assigns higher NLL to inputs related to certain groups, indicating potential bias.
+---
+
+### **Generation-Based Fairness Metrics**
+
+These metrics analyze the content generated by LLMs to detect and quantify bias or unfair representations.
+
+1. **Stereotype Content Generation Score**
+   - Quantifies the extent to which generated text contains stereotypes or biased language against specific groups.
+
+2. **Bias in Generated Text**
+   - Measures the frequency and severity of biased or harmful language in model outputs.
+
+3. **Toxicity Scores**
+   - Uses tools like the **Perspective API** to evaluate the toxicity levels of generated text towards different demographics.
+
+4. **Sentiment Analysis Disparity**
+   - Assesses differences in sentiment expressed in generated content about different demographic groups.
+
+5. **Demographic Representation Parity**
+   - Evaluates whether different demographic groups are equally represented or mentioned in generated content.
+
+6. **Harmful Content Detection Rate**
+   - Calculates the percentage of generated outputs flagged as harmful or biased by automated detectors.
+
+7. **Crowdsourced Bias Assessment**
+   - Involves human evaluators rating the fairness or bias in generated content for qualitative insights.
+
+8. **Diversity Metrics Across Groups**
+   - Measures the diversity of generated content related to different demographic attributes to ensure varied representation.
+
+9. **Self-BLEU Disparity**
+   - Compares the diversity within generated texts for different groups by measuring BLEU scores among outputs; lower diversity may indicate bias.
+
+10. **Average Negative Impact (ANI)**
+    - Quantifies the negative impact or harm of generated content on different demographic groups.
+
+11. **Counterfactual Fairness Evaluation**
+    - Generates counterfactual instances by swapping demographic identifiers (e.g., "he" to "she") and assesses changes in the output to detect bias.
+
+12. **Bias Sentiment Analysis**
+    - Analyzes sentiment biases in generated content when referring to different groups, using sentiment analysis tools.
+
+13. **Equity Evaluation Corpus (EEC) Metrics**
+    - Uses specially designed sentences to test for bias in sentiment and toxicity towards different identities.
+
+14. **Stereotype Score with Contextual Prompts**
+    - Measures bias in generated responses when prompted with context that could elicit biased outputs.
+
+15. **Offensiveness Scores**
+    - Assesses the level of offensiveness in generated content using lexicons or classifiers.
+
+16. **False Negative Rate Balance**
+    - Ensures that the rate at which the model fails to detect harmful content is balanced across different groups.
+
+17. **Contextualized Fairness Measures**
+    - Evaluates fairness in specific contexts or scenarios relevant to different demographic groups.
+
+
+
+These metrics help identify and quantify biases related to gender, race, religion, age, and other sensitive attributes in LLMs. Employing a combination of these metrics provides a comprehensive understanding of a model's fairness and guides efforts to mitigate biases.
+
 
 # Papers
 
