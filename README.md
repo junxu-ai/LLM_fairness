@@ -75,8 +75,7 @@ While significant progress has been made in understanding and addressing fairnes
 - Jingling Li, Zeyu Tang, Xiaoyu Liu, Peter Spirtes, Kun Zhang, Liu Leqi, Yang Liu, Steering LLMs Towards Unbiased Responses: A Causality-Guided Debiasing Framework, 2024, 10.48550/arxiv.2403.08743
 - Jessica Maria Echterhoff, Yao Liu, Abeer Alessa, Julian McAuley, Zexue He, Cognitive Bias in High-Stakes Decision-Making with LLMs, 2024, 10.48550/arxiv.2403.00811
 - Jie Wang, LLM-Oracle Machines, 2024, 10.48550/arxiv.2406.12213
-- Jin A. Shin, Henry Song, H.J. Lee, Soyeong Jeong, Jong C. Park, Ask LLMs Directly, "What shapes your bias?": Measuring Social Bias in Large Language Models, 2024, 10.48550/arxiv.2406.![image](https://github.com/user-attachments/assets/ff6158f6-73b3-4e5f-85cb-7f6077732809)
-04064
+- Jin A. Shin, Henry Song, H.J. Lee, Soyeong Jeong, Jong C. Park, Ask LLMs Directly, "What shapes your bias?": Measuring Social Bias in Large Language Models, 2024, 10.48550/arxiv.2406.
 - Jingling Li, Steering LLMs Towards Unbiased Responses: A Causality-Guided Debiasing Framework, 2024, 10.48550/arxiv.2403.08743
 - Jingtong Gao, Chen Bin, Xiangyu Zhao, Weiwen Liu, Xiangyang Li, Yichao Wang, Zijian Zhang, Wanyu Wang, Yuyang Ye, Shawn D. Lin, Huifeng Guo, Ruiming Tang, LLM-enhanced Reranking in Recommender Systems, 2024, 10.48550/arxiv.2406.12433
 
