@@ -1,7 +1,6 @@
 # Fairness in LLM
 This repository contains a collection of papers, tools, datasets for fairness of LLM.
 
-- [Fairness in LLM](#fairness-in-llm)
 - [Introduction](#introduction)
   - [Sources of Bias in LLMs](#sources-of-bias-in-llms)
   - [Assessing Fairness in LLMs](#assessing-fairness-in-llms)
@@ -23,7 +22,7 @@ Fairness in Large Language Models (LLMs) is a critical area of research, as thes
 
 ## Sources of Bias in LLMs
 - Data and Training Bias: LLMs are trained on vast datasets that may contain historical biases, leading to biased model outputs. These biases can manifest in various forms, such as gender, race, and age discrimination.
-- Model Architecture and Design: The design of LLMs can inherently favor certain types of data or interactions, which may not be representative of all user groups.
+- Model Architecture and Design Bias: The design of LLMs can inherently favor certain types of data or interactions, which may not be representative of all user groups.
 - Use Case Specific Bias: Different applications of LLMs, such as text classification or information retrieval, can introduce unique biases based on how the models are used and the context in which they operate.
 
 ## Assessing Fairness in LLMs
@@ -184,9 +183,20 @@ While significant progress has been made in understanding and addressing fairnes
 
 
 # Datasets
+Many databases are proposed for fairness evaluation: 
 
-Database for fairness evaluation
-https://github.com/i-gallegos/Fair-LLM-Benchmark
+- Probability-based Datasets:
+
+These datasets are typically used to evaluate the probabilistic outputs of language models. They focus on how well a model can predict the likelihood of certain words or sequences of words occurring in a given context.
+Such datasets often include a variety of text samples where the model's task is to assign probabilities to different possible continuations or completions. This helps in assessing the model's understanding of language patterns and its ability to generate coherent and contextually appropriate text.
+
+- Generation-based Datasets:
+
+These datasets are designed to evaluate the text generation capabilities of language models. They provide prompts or initial text inputs, and the model is tasked with generating extended text based on these inputs.
+The focus is on the quality, coherence, and creativity of the generated text, as well as its adherence to any specified constraints or guidelines. These datasets help in assessing how well a model can produce human-like text and its potential biases in generation.
+![image](https://github.com/user-attachments/assets/bbb8c35c-7ac0-4dec-9216-ff73c7232161)
+
+Readers can find more information from https://github.com/i-gallegos/Fair-LLM-Benchmark
 
 # Other Useful Links
 
