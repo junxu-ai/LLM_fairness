@@ -26,8 +26,8 @@ Fairness in Large Language Models (LLMs) is a critical area of research, as thes
 - Use Case Specific Bias: Different applications of LLMs, such as text classification or information retrieval, can introduce unique biases based on how the models are used and the context in which they operate.
 
 ## Assessing Fairness in LLMs
-- Fairness Metrics: Various metrics have been proposed to evaluate fairness in LLMs, including counterfactual metrics and stereotype classifiers. These metrics help in quantifying bias and assessing the fairness of model outputs.
-- Group Fairness Evaluation: Evaluating LLMs through a group fairness lens involves analyzing how different social groups are represented and treated by the models. This approach uses datasets like GFair to assess biases across multiple dimensions.
+- Fairness Metrics: Various metrics have been proposed to evaluate fairness in LLMs, including counterfactual metrics and stereotype classifiers. These metrics help in quantifying bias and assessing the fairness of model outputs. 
+- Individual vs Group Fairness Evaluation: Evaluating LLMs through a group fairness lens involves analyzing how different social groups are represented and treated by the models. This approach uses datasets like GFair to assess biases across multiple dimensions.
 - Empirical Studies: Studies using datasets such as the TREC Fair Ranking dataset provide empirical benchmarks for evaluating fairness in LLMs, particularly in ranking tasks.
 
 ## Mitigation Strategies
