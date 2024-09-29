@@ -235,6 +235,7 @@ These metrics help identify and quantify biases related to gender, race, religio
 | Dbias               | [Dbias](https://github.com/dreji18/Fairness-in-AI)       | Detect and mitigate biases in NLP tasks. The model is an end-to-end framework that takes data into raw form, preprocesses it, detects various types of biases, and mitigates them. The output is text free from bias. |
 | Perspective API | [Perspective API by Google Jigsaw](https://www.perspectiveapi.com) | A tool created by Google Jigsaw that detects toxicity in text. It generates a probability of toxicity for a given text input and is widely used in research on mitigating toxic content in AI. |
 | Aequitas        | [Aequitas Bias Audit Toolkit](https://dsapp.uchicago.edu/projects/aequitas) | An open-source toolkit designed to audit fairness and detect bias in machine learning models. Aequitas helps data scientists and policymakers understand and mitigate bias, including in large language models (LLMs). |
+|LLMeBench|[LLMeBench](https://github.com/qcri/LLMeBench)|The framework currently supports evaluation of a variety of NLP tasks using three model providers: OpenAI (e.g., GPT), HuggingFace Inference API, and Petals (e.g., BLOOMZ); it can be seamlessly customized for any NLP task, LLM model and dataset, regardless of language.|
 
 
 ## General tools
