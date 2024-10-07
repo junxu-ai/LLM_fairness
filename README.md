@@ -1,5 +1,5 @@
 # Fairness in LLM
-This repository contains a collection of papers, tools, datasets for fairness of LLM.
+This repository contains a collection of papers, tools, methods/metrics, datasets for fairness of LLM.
 
 - [Introduction](#introduction)
   - [Sources of Bias in LLMs](#sources-of-bias-in-llms)
